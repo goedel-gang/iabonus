@@ -4,3 +4,14 @@
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
+
+% idk what begingroup was for in here, hope it wasn't important
+% (same goes for the textline macro)
+\renewcommand*\maketitle{
+ \makeatother
+ \@date
+ \hspace*\fill
+ \textbf{\@title}
+ \hspace*\fill \@author
+ \vspace{0.3cm}
+}
